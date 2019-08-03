@@ -12,6 +12,7 @@ RUN \
    echo "starting...." \
    && chmod +x /temp/webd \
    && apk add libgcc
+
 EXPOSE 80
 VOLUME ["/mnt"]
 ENTRYPOINT /temp/webd -l 80 -w /mnt
