@@ -10,8 +10,6 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
 
 RUN \
    echo "starting...." \
-   #&& echo https://mirrors.tuna.tsinghua.edu.cn/alpine/edge/main > /etc/apk/repositories \
-   #&& echo https://mirrors.tuna.tsinghua.edu.cn/alpine/edge/community >> /etc/apk/repositories \
    && chmod +x /temp/webd \
    && apk add libgcc
 EXPOSE 80
